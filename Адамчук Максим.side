@@ -1,0 +1,644 @@
+{
+  "id": "87809a1a-b370-4419-afe0-3965c497a490",
+  "version": "2.0",
+  "name": "Адамчук Максим",
+  "url": "https://www.saucedemo.com",
+  "tests": [
+    {
+      "id": "d892ed39-4164-41e0-898d-aafe7d0cf138",
+      "name": "01 Авторизація",
+      "commands": [
+        {
+          "id": "4d52431c-6b1c-4423-9ca6-05441d0059c8",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "70a61019-40e9-49f6-8e48-46b5808287e6",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"username\"]",
+          "targets": [
+            [
+              "css=[data-test=\"username\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=user-name",
+              "id"
+            ],
+            [
+              "name=user-name",
+              "name"
+            ],
+            [
+              "css=#user-name",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='user-name']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/div[1]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "standard_user"
+        },
+        {
+          "id": "d66b644b-a3da-4322-8e60-17b66c43b1a0",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"password\"]",
+          "targets": [
+            [
+              "css=[data-test=\"password\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=password",
+              "id"
+            ],
+            [
+              "name=password",
+              "name"
+            ],
+            [
+              "css=#password",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='password']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/div[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "0505b48b-3aa8-49f0-acf9-3b5f2fdc91e0",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"login-button\"]",
+          "targets": [
+            [
+              "css=[data-test=\"login-button\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=login-button",
+              "id"
+            ],
+            [
+              "name=login-button",
+              "name"
+            ],
+            [
+              "xpath=//input[@value='Login']",
+              "xpath:buttonText"
+            ],
+            [
+              "css=#login-button",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='login-button']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "95e0d2e5-e641-4246-981f-ce6dfd9a3594",
+          "comment": "Підготовка незалежного запуску",
+          "command": "click",
+          "target": "id=react-burger-menu-btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "87828fb4-4bc0-471b-ad5b-1fbe72ccceb7",
+          "comment": "",
+          "command": "click",
+          "target": "id=reset_sidebar_link",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "511015fc-ead5-4927-a6fb-676b6e57ff1b",
+          "comment": "Оновити каталог після очищення кошика",
+          "command": "open",
+          "target": "/inventory.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b0000185-0062-4102-a3a1-e98a948c6642",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=[data-test=\"title\"]",
+          "targets": [],
+          "value": "Products"
+        }
+      ]
+    },
+    {
+      "id": "9b5261e5-7eee-4700-8cdb-3fe4c522f1dd",
+      "name": "02 Додавання товару",
+      "commands": [
+        {
+          "id": "daa6de43-1efb-4230-8960-930ab044182b",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7b701984-fd05-40dd-be0b-9ce730c8a4d9",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"username\"]",
+          "targets": [
+            [
+              "css=[data-test=\"username\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=user-name",
+              "id"
+            ],
+            [
+              "name=user-name",
+              "name"
+            ],
+            [
+              "css=#user-name",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='user-name']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/div[1]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "standard_user"
+        },
+        {
+          "id": "175ff465-685f-4dcc-af4c-1e6e1da58e90",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"password\"]",
+          "targets": [
+            [
+              "css=[data-test=\"password\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=password",
+              "id"
+            ],
+            [
+              "name=password",
+              "name"
+            ],
+            [
+              "css=#password",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='password']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/div[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "9f4865e9-5af5-45c2-b75d-edb2fd041224",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"login-button\"]",
+          "targets": [
+            [
+              "css=[data-test=\"login-button\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=login-button",
+              "id"
+            ],
+            [
+              "name=login-button",
+              "name"
+            ],
+            [
+              "xpath=//input[@value='Login']",
+              "xpath:buttonText"
+            ],
+            [
+              "css=#login-button",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='login-button']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1c0ce0aa-6ac3-45f9-96b1-a2e0c7b13b6a",
+          "comment": "Підготовка незалежного запуску",
+          "command": "click",
+          "target": "id=react-burger-menu-btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2a33e8fc-d9c9-4496-a110-0ad037be8b5d",
+          "comment": "",
+          "command": "click",
+          "target": "id=reset_sidebar_link",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "be49b646-e488-4dfb-90a9-ab2bc9a4c88a",
+          "comment": "Оновити каталог після очищення кошика",
+          "command": "open",
+          "target": "/inventory.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ff86bb70-d1e5-44d6-bfd7-3f29c40b83d9",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+          "targets": [
+            [
+              "css=[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=add-to-cart-sauce-labs-backpack",
+              "id"
+            ],
+            [
+              "name=add-to-cart-sauce-labs-backpack",
+              "name"
+            ],
+            [
+              "css=div:nth-of-type(1) > [data-test=\"inventory-item-description\"] .btn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='add-to-cart-sauce-labs-backpack']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='inventory_container']/div/div[1]/div[2]/div[2]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[normalize-space()='Add to cart']",
+              "xpath:buttonText"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Add to cart')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "44360a76-4c48-45ad-9429-798a65aba7bf",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=[data-test=\"shopping-cart-badge\"]",
+          "targets": [],
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "id": "f2673698-8d78-43ff-af40-acdc13e78cf1",
+      "name": "03 Видалення товару",
+      "commands": [
+        {
+          "id": "dd2b830a-0b03-4c43-ae76-6b0d1d902cd8",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a426c81a-483e-47b3-b5fb-301041bd1bf9",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"username\"]",
+          "targets": [
+            [
+              "css=[data-test=\"username\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=user-name",
+              "id"
+            ],
+            [
+              "name=user-name",
+              "name"
+            ],
+            [
+              "css=#user-name",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='user-name']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/div[1]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "standard_user"
+        },
+        {
+          "id": "00afde86-d8bd-4964-a8d4-cfd057ab44f5",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-test=\"password\"]",
+          "targets": [
+            [
+              "css=[data-test=\"password\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=password",
+              "id"
+            ],
+            [
+              "name=password",
+              "name"
+            ],
+            [
+              "css=#password",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='password']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/div[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "secret_sauce"
+        },
+        {
+          "id": "7d6633cf-bfec-42eb-9a54-26c0e8cd9c7e",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"login-button\"]",
+          "targets": [
+            [
+              "css=[data-test=\"login-button\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=login-button",
+              "id"
+            ],
+            [
+              "name=login-button",
+              "name"
+            ],
+            [
+              "xpath=//input[@value='Login']",
+              "xpath:buttonText"
+            ],
+            [
+              "css=#login-button",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='login-button']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='login_button_container']/div/form/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "cd151b75-0377-4870-8e55-be261ba214a3",
+          "comment": "Підготовка незалежного запуску",
+          "command": "click",
+          "target": "id=react-burger-menu-btn",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cac9963e-a69b-451e-af97-b19d9070d50d",
+          "comment": "",
+          "command": "click",
+          "target": "id=reset_sidebar_link",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f9f98fa1-4624-40e6-bae1-87032a44428d",
+          "comment": "Оновити каталог після очищення кошика",
+          "command": "open",
+          "target": "/inventory.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7aae81b5-58f8-4812-80fa-84e21dccc76e",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+          "targets": [
+            [
+              "css=[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=add-to-cart-sauce-labs-backpack",
+              "id"
+            ],
+            [
+              "name=add-to-cart-sauce-labs-backpack",
+              "name"
+            ],
+            [
+              "css=div:nth-of-type(1) > [data-test=\"inventory-item-description\"] .btn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='add-to-cart-sauce-labs-backpack']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='inventory_container']/div/div[1]/div[2]/div[2]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[normalize-space()='Add to cart']",
+              "xpath:buttonText"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Add to cart')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1027c6c2-d3be-4169-b6af-f8257f6aeb66",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-test=\"remove-sauce-labs-backpack\"]",
+          "targets": [
+            [
+              "css=[data-test=\"remove-sauce-labs-backpack\"]",
+              "css:data-test-id"
+            ],
+            [
+              "id=remove-sauce-labs-backpack",
+              "id"
+            ],
+            [
+              "name=remove-sauce-labs-backpack",
+              "name"
+            ],
+            [
+              "xpath=//button[normalize-space()='Remove']",
+              "xpath:buttonText"
+            ],
+            [
+              "css=#remove-sauce-labs-backpack",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='remove-sauce-labs-backpack']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='inventory_container']/div/div[1]/div[2]/div[2]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Remove')]",
+              "xpath:innerText"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "49702f5b-3eb5-4c9c-a2bc-3dadcffc800b",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-test=\"shopping-cart-badge\"]",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "1b059dae-676f-448a-954a-70f9223ca646",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "d892ed39-4164-41e0-898d-aafe7d0cf138",
+        "9b5261e5-7eee-4700-8cdb-3fe4c522f1dd",
+        "f2673698-8d78-43ff-af40-acdc13e78cf1"
+      ]
+    }
+  ],
+  "urls": [
+    "https://www.saucedemo.com"
+  ],
+  "plugins": []
+}
